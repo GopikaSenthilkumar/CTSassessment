@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.Scanner;
-
 public class InventorySystem {
     HashMap<String, Product> inventory = new HashMap<>();
     Scanner sc = new Scanner(System.in);
