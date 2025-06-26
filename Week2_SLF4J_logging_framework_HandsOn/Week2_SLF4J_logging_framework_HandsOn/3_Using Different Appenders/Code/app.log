@@ -1,0 +1,4 @@
+10:15:11.345 [main] DEBUG com.example.AppenderLoggingExample - Debug level log message
+10:15:11.347 [main] INFO  com.example.AppenderLoggingExample - Info level log message
+10:15:11.348 [main] WARN  com.example.AppenderLoggingExample - Warning level log message
+10:15:11.349 [main] ERROR com.example.AppenderLoggingExample - Error level log message
