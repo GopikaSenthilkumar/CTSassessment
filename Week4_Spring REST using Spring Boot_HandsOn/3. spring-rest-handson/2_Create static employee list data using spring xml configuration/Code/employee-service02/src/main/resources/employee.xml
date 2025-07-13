@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="deptMarketing" class="com.cognizant.employeeservice.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="Marketing"/>
+    </bean>
+
+    <bean id="deptIT" class="com.cognizant.employeeservice.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="IT"/>
+    </bean>
+
+    <bean id="skillJava" class="com.cognizant.employeeservice.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="Java"/>
+    </bean>
+
+    <bean id="skillSql" class="com.cognizant.employeeservice.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="SQL"/>
+    </bean>
+
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <bean class="com.cognizant.employeeservice.model.Employee">
+                    <property name="id" value="1"/>
+                    <property name="name" value="Gopika"/>
+                    <property name="salary" value="50000"/>
+                    <property name="permanent" value="true"/>
+                    <property name="department" ref="deptMarketing"/>
+                    <property name="skills">
+                        <list>
+                            <ref bean="skillJava"/>
+                            <ref bean="skillSql"/>
+                        </list>
+                    </property>
+                </bean>
+
+                <bean class="com.cognizant.employeeservice.model.Employee">
+                    <property name="id" value="2"/>
+                    <property name="name" value="Geetha"/>
+                    <property name="salary" value="60000"/>
+                    <property name="permanent" value="false"/>
+                    <property name="department" ref="deptIT"/>
+                    <property name="skills">
+                        <list>
+                            <ref bean="skillJava"/>
+                        </list>
+                    </property>
+                </bean>
+
+                <bean class="com.cognizant.employeeservice.model.Employee">
+                    <property name="id" value="3"/>
+                    <property name="name" value="Radha"/>
+                    <property name="salary" value="55000"/>
+                    <property name="permanent" value="true"/>
+                    <property name="department" ref="deptIT"/>
+                    <property name="skills">
+                        <list>
+                            <ref bean="skillSql"/>
+                        </list>
+                    </property>
+                </bean>
+
+                <bean class="com.cognizant.employeeservice.model.Employee">
+                    <property name="id" value="4"/>
+                    <property name="name" value="Praveen"/>
+                    <property name="salary" value="58000"/>
+                    <property name="permanent" value="false"/>
+                    <property name="department" ref="deptMarketing"/>
+                    <property name="skills">
+                        <list>
+                            <ref bean="skillJava"/>
+                            <ref bean="skillSql"/>
+                        </list>
+                    </property>
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
