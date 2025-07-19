@@ -1,0 +1,6 @@
+spring:
+  security:
+    jwt:
+      secret: my-secret-key
+server:
+  port: 8080
