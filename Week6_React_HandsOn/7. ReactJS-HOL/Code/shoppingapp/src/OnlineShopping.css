@@ -1,0 +1,24 @@
+.shopping-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+.shopping-container h2 {
+  color: #2e7d32;
+  font-weight: bold;
+}
+table {
+  margin: 0 auto;
+  border: 3px solid #75aa76; 
+  border-spacing: 0; 
+  width: 400px;
+}
+th, td {
+  border: 1px solid #5f9661; 
+  padding: 10px;
+  text-align: center;
+}
+th {
+  color: #2e7d32;
+  background-color: #e3fbd4;
+}
