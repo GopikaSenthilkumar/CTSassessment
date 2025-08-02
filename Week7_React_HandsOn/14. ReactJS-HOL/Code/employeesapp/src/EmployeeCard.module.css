@@ -1,0 +1,24 @@
+.Card{
+    display: inline-block;
+    width: 25%;
+    border:1px solid #999;
+    border-radius: 5px;
+    margin:10px;
+    padding:10px;
+}
+
+.LightButton {
+  background-color: #eee;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.DarkButton {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+}
